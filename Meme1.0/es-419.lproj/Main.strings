@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "BOTTOM"; ObjectID = "22l-sg-Jvr"; */
+"22l-sg-Jvr.placeholder" = "BOTTOM";
+
+/* Class = "UITextField"; placeholder = "TOP"; ObjectID = "9cV-Tc-aXG"; */
+"9cV-Tc-aXG.placeholder" = "TOP";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "XH9-K8-KIM"; */
+"XH9-K8-KIM.title" = "Cancel";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "cZf-fz-VXe"; */
+"cZf-fz-VXe.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "jvr-jY-SaM"; */
+"jvr-jY-SaM.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "mKr-i4-cz9"; */
+"mKr-i4-cz9.title" = "Item";

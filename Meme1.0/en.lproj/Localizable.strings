@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Meme1.0
+
+  Created by Marlhex on 2020-04-12.
+  Copyright © 2020 Ignacio Arias. All rights reserved.
+*/
+
+
+//Default text for TopTF
+"placeholder_Text" = "Add Text";
+
+//Title for NavBar
+"navBarAddImage" = "Please, add an image :)";
+
+"navBarShare" = "Share it :)";
+
+"navBarAddText" = "Add text :)";
