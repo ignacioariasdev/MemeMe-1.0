@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate,
+class MemeEditorVC: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate, UITextFieldDelegate {
 
 	@IBOutlet weak var img: UIImageView!
@@ -85,7 +85,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 				.font: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
 				.foregroundColor: UIColor.white,
 				.strokeColor: UIColor.black,
-				.strokeWidth: 3
+				.strokeWidth: -3.5
 			]
 
 			//Alignment of the placeholder
