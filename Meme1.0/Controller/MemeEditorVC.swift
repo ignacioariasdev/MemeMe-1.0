@@ -21,10 +21,14 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 
 
 	func save(_ memedImage: UIImage) {
-		_ = Meme(topText: topTexField.text!,
+		let meme = Meme(topText: topTexField.text!,
 				 bottomText: bottomTextField.text!,
 				 originalImage: img.image!,
 				 memeImage: memedImage)
+
+		// Add it to the memes array on the app delegate
+		(UIApplication.shared.delegate as! AppDelegate).memes.append(meme)
+
 	}
 
 
@@ -33,6 +37,9 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 		// TODO: Hide toolbar and navbar
 		navigationController?.isToolbarHidden = true
 		toolbar.isHidden = true
+		if bottomTextField.text!.isEmpty {
+			bottomTextField.isHidden = true
+		}
 		// Render view to an image
 		UIGraphicsBeginImageContext(self.view.frame.size)
 		view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
@@ -42,6 +49,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 		// TODO: Show toolbar and navbar
 		navigationController?.isToolbarHidden = false
 		toolbar.isHidden = false
+		bottomTextField.isHidden = false
 
 		return memedImage
 	}
@@ -98,11 +106,6 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 
 	// MARK: - View Controller Life Cycle
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-
-
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 
@@ -127,8 +130,8 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 	}
 
 	override func viewWillDisappear(_ animated: Bool) {
-		super.viewWillDisappear(animated)
 		unsubscribeFromKeyboardNotifications()
+		super.viewWillDisappear(animated)
 	}
 
 	// MARK: - Delegates
