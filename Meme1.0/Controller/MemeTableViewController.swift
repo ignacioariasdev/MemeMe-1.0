@@ -10,7 +10,7 @@ import UIKit
 
 class MemeTableViewController: UITableViewController {
 
-	private let tableCellID = "TableCellID"
+	private let tableCellID = "tableCellID"
 
 	var memes: [Meme]! {
 		let object = UIApplication.shared.delegate
@@ -27,7 +27,7 @@ class MemeTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
 
-		tableView.register(MemeTableCell.self, forCellReuseIdentifier: tableCellID)
+//		tableView.register(MemeTableCell.self, forCellReuseIdentifier: tableCellID)
 
 		tableView.delegate = self
 		tableView.dataSource = self

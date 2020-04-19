@@ -37,7 +37,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 		// TODO: Hide toolbar and navbar
 		navigationController?.isToolbarHidden = true
 		toolbar.isHidden = true
-		if bottomTextField.text!.isEmpty {
+		if bottomTextField.text!.isEmpty || bottomTextField.placeholder == "BOTTOM" {
 			bottomTextField.isHidden = true
 		}
 		// Render view to an image

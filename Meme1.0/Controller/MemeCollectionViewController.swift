@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "CollectionCellID"
+private let reuseIdentifier = "collectionCellID"
 
 class MemeCollectionViewController: UICollectionViewController {
 
@@ -24,8 +24,7 @@ class MemeCollectionViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
-        self.collectionView!.register(MemeCollectionCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
 
         // Do any additional setup after loading the view.
 		navigationItem.title = "Sent Memes"
