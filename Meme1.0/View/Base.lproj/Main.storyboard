@@ -330,6 +330,65 @@
             </objects>
             <point key="canvasLocation" x="-446.37681159420293" y="-364.28571428571428"/>
         </scene>
+        <!--Villain Details-->
+        <scene sceneID="dD8-aQ-yrR">
+            <objects>
+                <viewController storyboardIdentifier="MemeDetailViewController" title="Villain Details" id="0jV-aI-sHt" customClass="MemeDetailVC" customModule="Meme1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OKl-hG-BZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5x-to-GhX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UG4-ei-7bo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKC-WK-dAo">
+                                <rect key="frame" x="147" y="398" width="120" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="TH1-wG-neu"/>
+                                    <constraint firstAttribute="height" constant="100" id="i6d-5h-Izw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bottomLbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-IM-O2e">
+                                <rect key="frame" x="20" y="519" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topLbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-xq-mjs">
+                                <rect key="frame" x="20" y="355.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fAz-xq-mjs" firstAttribute="centerX" secondItem="D5j-C3-T0K" secondAttribute="centerX" id="3AI-Dd-0K3"/>
+                            <constraint firstAttribute="centerY" secondItem="cKC-WK-dAo" secondAttribute="centerY" id="DwF-Zt-rDn"/>
+                            <constraint firstAttribute="centerX" secondItem="cKC-WK-dAo" secondAttribute="centerX" id="FBG-vl-Xei"/>
+                            <constraint firstItem="cKC-WK-dAo" firstAttribute="top" secondItem="fAz-xq-mjs" secondAttribute="bottom" constant="22" id="GgP-Hs-qkP"/>
+                            <constraint firstItem="D5j-C3-T0K" firstAttribute="trailing" secondItem="fAz-xq-mjs" secondAttribute="trailing" constant="20" id="ct3-DC-Tw7"/>
+                            <constraint firstItem="y7n-IM-O2e" firstAttribute="leading" secondItem="UG4-ei-7bo" secondAttribute="leadingMargin" id="d0e-bc-uNm"/>
+                            <constraint firstItem="y7n-IM-O2e" firstAttribute="top" secondItem="cKC-WK-dAo" secondAttribute="bottom" constant="21" id="iZr-eO-ilL"/>
+                            <constraint firstAttribute="centerX" secondItem="y7n-IM-O2e" secondAttribute="centerX" id="igu-55-pQC"/>
+                            <constraint firstAttribute="centerX" secondItem="cKC-WK-dAo" secondAttribute="centerX" id="kMn-4y-hZr"/>
+                            <constraint firstItem="y7n-IM-O2e" firstAttribute="trailing" secondItem="UG4-ei-7bo" secondAttribute="trailingMargin" id="oFo-0N-nMV"/>
+                            <constraint firstAttribute="centerY" secondItem="cKC-WK-dAo" secondAttribute="centerY" id="taz-7s-Ix8"/>
+                            <constraint firstItem="fAz-xq-mjs" firstAttribute="leading" secondItem="D5j-C3-T0K" secondAttribute="leading" constant="20" id="xij-p9-JOJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D5j-C3-T0K"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLbl" destination="y7n-IM-O2e" id="Y3w-Gk-zNQ"/>
+                        <outlet property="img" destination="cKC-WK-dAo" id="5OV-ST-7Zq"/>
+                        <outlet property="tpLbl" destination="fAz-xq-mjs" id="REB-KJ-qXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UV-1C-toS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="135"/>
+        </scene>
     </scenes>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
